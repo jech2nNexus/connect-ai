@@ -1,5 +1,5 @@
 # 📋 통합 스케줄
-_업데이트: 2026. 5. 27. 오후 5:20:36_
+_업데이트: 2026. 5. 27. 오후 6:16:45_
 
 ## 🤖 에이전트 최근 활동
 ### 📺 레오
@@ -17,7 +17,7 @@ _업데이트: 2026. 5. 27. 오후 5:20:36_
 - [2026-05-23] 현빈아, 이번 달 PayPal 매출 실데이터 가져와서 분석하고 다음 액션 1개 추천해줘. → 산출물 sessions/2026-05-23T07-39/business.md
 - [2026-05-23] 현빈아, 이번 달 PayPal 매출 실데이터 가져와서 분석하고 다음 액션 1개 추천해줘. → 산출물 sessions/2026-05-23T09-35/business.md
 ### 📱 영숙
-- [2026-05-27] Designer와 Developer가 진행 중인 썸네일 자동화 시스템 관련 최종 산출물(Design_System_Input.json 및 Tone(Mood) 기반 규칙)의 현재 진행 상황과 발생한 모든 에러 로그를 요약하여 CEO에게 보고할 준비를 하라. → 산출물 sessions/2026-05-27T04-23/secretary.md
 - [2026-05-27] Designer와 Developer가 진행 중인 썸네일 자동화 시스템 관련 최종 산출물(Design_System_Input.json 및 Tone(Mood) 기반 규칙)의 현재 진행 상황과 발생한 모든 에러 로그를 요약하여 CEO에게 보고할 준비를 하라. → 산출물 sessions/2026-05-27T05-23/secretary.md
 - [2026-05-27] Developer와 Designer가 진행 중인 썸네일 자동화 시스템 관련 최종 산출물(Design_System_Input.json 및 Tone(Mood) 기반 규칙)의 현재 진행 상황과 발생한 모든 에러 로그를 요약하여 CEO에게 보고할 준비를 하라. → 산출물 sessions/2026-05-27T07-56/secretary.md
+- [2026-05-27] Developer와 Designer가 진행 중인 썸네일 자동화 시스템 관련 최종 산출물(Design_System_Input.json 및 Tone(Mood) 기반 규칙)의 현재 진행 상황과 발생한 모든 에러 로그를 요약하여 CEO에게 보고할 준비를 하라. → 산출물 sessions/2026-05-27T08-56/secretary.md
 
