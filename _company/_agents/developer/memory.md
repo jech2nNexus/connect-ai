@@ -43,3 +43,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-05-28] Designer와 Secretary가 제공한 최종 디자인 규칙(Design_System_Input.json 및 Tone(Mood))을 기반으로, 썸네일 자동화 스크립트의 다음 단계 코드를 안정적으로 구현하고 최종 테스트를 완료하여 LLM 호출 실패 문제를 해결하라. → 산출물 sessions/2026-05-28T12-20/developer.md
 - [2026-05-31] 썸네일 자동화 스크립트(Design_System_Input.json 및 Tone(Mood) 기반)에 대한 최종 안정성 테스트를 완료하고, LLM 호출 실패 문제를 해결하여 시스템을 완벽하게 작동하도록 보장하라. → 산출물 sessions/2026-05-31T08-15/developer.md
 - [2026-05-31] 썸네일 자동화 스크립트(Design_System_Input.json 및 Tone(Mood) 기반)에 대한 최종 안정성 테스트를 즉시 재개하고, LLM 호출 실패 문제를 완전히 해결하여 시스템을 완벽하게 작동하도록 보장하라. → 산출물 sessions/2026-05-31T09-15/developer.md
+- [2026-06-01] 썸네일 자동화 스크립트(Design_System_Input.json 및 Tone(Mood) 기반)에 대한 최종 안정성 테스트를 즉시 재개하고, LLM 호출 실패 문제를 완전히 해결하여 시스템을 완벽하게 작동하도록 보장하라. → 산출물 sessions/2026-06-01T01-09/developer.md
