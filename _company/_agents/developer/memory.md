@@ -68,3 +68,4 @@ _코다리 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-11-20] 이전 'Design_System_Input.json' 및 Tone(Mood) 규칙을 바탕으로 썸네일 자동화 스크립트의 기술적 실행 가능성을 재점검하고, LLM 호출 실패 및 메모리 문제를 회피할 수 있는 최소한의 기술적 준비 사항 보고서를 업데이트하라. → 산출물 sessions/2026-11-20T22-35/developer.md
 - [2026-11-20] 'Design_System_Input.json' 및 Tone(Mood) 규칙을 바탕으로 썸네일 자동화 스크립트의 기술적 실행 가능성을 재점검하고, LLM 호출 실패 및 메모리 문제를 회피할 수 있는 최소한의 기술적 준비 사항 보고서를 업데이트하라. → 산출물 sessions/2026-11-20T23-20/developer.md
 - [2026-11-21] 이전 'Design_System_Input.json' 및 Tone(Mood) 규칙, 그리고 LLM 호출 실패/메모리 문제에 대한 보고서를 바탕으로 썸네일 자동화 스크립트의 기술적 실행 가능성을 최종 재점검하고, 메모리 및 Context Length 문제를 회피할 수 있는 최소한의 기술적 준비 사항을 확정하여 보고하라. → 산출물 sessions/2026-11-21T00-05/developer.md
+- [2026-11-21] 이전의 'Design_System_Input.json' 및 Tone(Mood) 규칙, 그리고 LLM 호출 실패/메모리 문제에 대한 보고서를 바탕으로 썸네일 자동화 스크립트의 기술적 실행 가능성을 최종 재점검하고, 메모리 및 Context Length 문제를 회피할 수 있는 최소한의 기술적 준비 사항을 확정하여 보고하라. → 산출물 sessions/2026-11-21T14-18/developer.md
