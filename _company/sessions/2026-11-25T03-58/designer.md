@@ -1,0 +1,86 @@
+# 🎨 Designer — 썸네일 자동화 시스템 구축을 위해 기존 'Design_System_Input.json' 및 Tone(Mood) 규칙을 기반으로 개발자에게 전달할 최종 시각 자료 프롬프트와 입력 규칙의 완벽한 구체화를 준비하라.
+
+🎨 Designer: 작업 시작합니다.
+
+썸네일 자동화 시스템 구축을 위해 개발자에게 전달할 최종 시각 자료 프롬프트와 입력 규칙을 완벽하게 구체화하겠습니다. 이는 기존의 디자인 시스템 정의(`Design_System_Input.json`, `Tone(Mood)` 규칙)를 기반으로 하며, 자동화 스크립트가 오차 없이 원하는 결과물을 생성하도록 모든 변수와 제약 조건을 명확히 정리한 최종 가이드라인입니다.
+
+---
+
+# 🖼️ 썸네일 자동화 시스템을 위한 최종 디자인 입력 및 규칙 (Developer Specification)
+
+본 문서는 썸네일 자동화 스크립트 개발자가 AI 이미지 생성 모델에 전달해야 할 **최종 입력값(Prompt Variables)**과 **규칙(Constraints & Validation)**을 정의합니다. 모든 출력은 이 사양을 100% 준수해야 합니다.
+
+## 1. 디자인 시스템 입력 파일: `Design_System_Input.json` (핵심 변수)
+
+이 JSON 파일은 이미지의 구조와 스타일을 결정하는 핵심 설정값입니다.
+
+```json
+{
+  "Brand_Color_Palette": {
+    "Primary_Accent": "#4A90E2",   // DAON 블루 계열. 신뢰감과 AI 기술 강조
+    "Secondary_Highlight": "#F5A623", // 활력 및 주목도 향상 (주의사항: 최대 20% 이상 사용 금지)
+    "Background_Neutral": "#F7F7F7", // 깨끗하고 미니멀한 배경
+    "Text_Primary": "#1C1C1C",      // 핵심 정보 강조 (거의 검정)
+    "Text_Secondary": "#666666"     // 보조 정보 및 설명용
+  },
+  "Typography_System": {
+    "Font_Header": "Pretendard Bold", // 제목, 가장 중요한 텍스트에 사용
+    "Font_Body": "Pretendard Regular", // 상세 설명에 사용
+    "Font_Style": "Clean, Sans-serif, Highly Readable" // 전반적인 폰트 스타일 지침
+  },
+  "Layout_Structure": {
+    "Rule_A_Focus": "Left Third (60%) for Main Visual/Subject", // 핵심 피사체 배치 규칙 A: 왼쪽 2/3에 시각적 요소 집중
+    "Rule_B_Text_Placement": "Right Third (40%) for Text Overlay", // 텍스트 오버레이 규칙 B: 오른쪽 1/3에 모든 텍스트 배치
+    "Rule_C_Balance": "Use negative space generously. Avoid clutter." // 여백 사용 규칙 C: 과도한 정보 밀집 방지
+  },
+  "Visual_Hierarchy": {
+    "Element_Priority_1": "Main Subject/Face (Must be clear)", // 최우선 요소: 핵심 피사체/얼굴 (명확해야 함)
+    "Element_Priority_2": "Key Statistic/Hook Text", // 차별화된 데이터/후킹 문구 (가장 눈에 띄게 처리)
+    "Element_Priority_3": "Brand Logo/Watermark", // 브랜드 로고 및 워터마크 (최소 크기 유지)
+    "Color_Application_Rule": "Apply Primary_Accent to Priority_2 elements only." // 색상 적용 규칙: Primary_Accent는 Priority_2 요소에만 적용.
+  }
+}
+```
+
+## 2. 감성 및 톤 가이드: `Tone(Mood)` 변형 규칙
+
+이 규칙은 AI가 생성하는 이미지의 전반적인 분위기와 시각적 톤을 제어합니다.
+
+| Mood Name | 목표 분위기 | 핵심 색상 조합 (Primary/Secondary) | 레이아웃 스타일 (Layout Rule 적용) | 가독성 검증 루프 기준 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Insightful** | 깊은 통찰, 지적인 정보 전달 | Primary: `#4A90E2`, Secondary: `#1C1C1C` | Rule A (60% 좌측), Rule B (40% 우측) 엄격 적용. 여백 최대화. | 텍스트 대비(Contrast Ratio) 최소 4.5 이상 유지. |
+| **Actionable** | 즉각적인 행동 유도, 동기 부여 | Primary: `#F5A623`, Secondary: `#1C1C1C` | Rule B (70% 우측), 시각적 움직임(Motion) 강조. | Call-to-Action 문구는 굵게(Bold) 처리하고 대비를 극대화. |
+| **Minimalist** | 깔끔함, 미니멀리즘, 브랜드 중심 | Primary: `#4A90E2`, Secondary: `#F7F7F7` | Rule C (여백 강조). 모든 요소는 중앙 또는 좌측 상단에 배치. | 시각적 복잡성(Visual Clutter) 10% 미만 유지. |
+
+## 3. 자동화 시스템 입력 규칙 (Developer Checklist)
+
+개발자가 스크립트를 구현할 때 반드시 준수해야 할 구체적인 실행 지침입니다.
+
+### A. 프롬프트 구조 (Prompt Structure)
+
+모든 요청은 다음의 명확한 단계로 구성되어야 합니다.
+
+1.  **[Base Style]**: `Tone(Mood)`를 기반으로 기본 분위기 설정.
+2.  **[Composition]**: `Layout_Structure` 규칙을 적용하여 프레임 분할 및 요소 배치를 지정.
+3.  **[Content Injection]**: 실제 텍스트(`Key Statistic`, `Hook Text`)와 시각적 피사체(Main Subject)를 명시적으로 입력.
+4.  **[Color Application]**: `Brand_Color_Palette` 중 어떤 색상을 어느 요소에 적용할지 명확히 지정 (예: "Statistic는 Secondary Color로, 강조 문구는 Primary Accent Color로").
+
+### B. 가독성 검증 루프 (Readability Validation Loop)
+
+AI가 생성한 결과물에 대해 자동적으로 다음 기준을 확인하고 실패 시 재시도를 유도해야 합니다.
+
+1.  **Contrast Check**: 텍스트와 배경 간의 명암비(Contrast Ratio)를 측정하여 최소 4.5 이상인지 검증한다. (실패 시, Text_Primary 색상을 조정하거나 레이아웃 규칙을 변경하도록 프롬프트를 재요청).
+2.  **Clutter Check**: 이미지 내 시각적 요소의 밀도를 분석하여 전체 영역 대비 불필요한 정보가 10%를 초과하는지 확인한다. (초과 시, `Rule_C_Balance`에 따라 여백을 확장하도록 조정).
+3.  **Hierarchy Check**: `Visual_Hierarchy`에서 정의된 우선순위(Priority 1 > Priority 2 > Priority 3)가 시각적으로 명확하게 구분되는지 확인한다. (실패 시, 요소 크기를 재조정하여 우선순위를 강제 적용).
+
+### C. 최종 검증 및 전달 사항
+
+개발자에게 이 문서를 전달할 때 다음을 강조해야 합니다.
+
+*   **절대 기준**: `Design_System_Input.json`의 색상 코드는 **절대 변경 불가**하며, 이는 브랜드 정체성을 반영한다.
+*   **동적 규칙**: `Tone(Mood)`는 이미지의 감성적 톤을 결정하는 핵심 변수이므로, 프롬프트에 반드시 포함되어야 한다.
+*   **자동화 목표**: 가독성 검증 루프는 수동 확인 단계를 최소화하고, AI가 스스로 디자인 품질을 개선하도록 만드는 데 목적이 있다.
+
+---
+📊 평가: 완료 — 요청된 사항(최종 시각 자료 프롬프트와 입력 규칙의 완벽한 구체화)을 바탕으로 모든 디자인 시스템 변수와 검증 루프를 포함하는 실행 가능한 명세서를 생성했습니다.
+📝 다음 단계: 개발자에게 본 문서를 전달하고, 실제 스크립트 구현 착수를 요청합니다.
