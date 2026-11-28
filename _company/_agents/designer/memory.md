@@ -55,3 +55,4 @@ _Designer 에이전트만 읽고 쓰는 개인 노트. 학습·교훈·자주 �
 - [2026-11-25] 썸네일 자동화를 위한 최종 시각 자료 프롬프트와 입력 규칙을 'Design_System_Input.json' 및 Tone(Mood) 규칙을 기반으로 완벽하게 구체화하여 개발팀에게 전달할 준비를 하라. → 산출물 sessions/2026-11-25T05-58/designer.md
 - [2026-11-25] 썸네일 자동화를 위한 최종 시각 자료 프롬프트와 입력 규칙을 'Design_System_Input.json' 및 Tone(Mood) 규칙을 기반으로, 개발팀(코다리)이 즉시 실행할 수 있도록 완벽하게 구체화하여 전달하라. → 산출물 sessions/2026-11-25T06-43/designer.md
 - [2026-11-28] 썸네일 자동화를 위한 최종 시각 자료 프롬프트와 입력 규칙을 'Design_System_Input.json' 및 Tone(Mood) 규칙을 기반으로 완벽하게 구체화하여 개발팀에게 전달할 준비를 하라. → 산출물 sessions/2026-11-28T00-19/designer.md
+- [2026-11-28] 썸네일 자동화를 위한 모든 디자인 변수와 톤앤매너 규칙(Design_System_Input.json)을 최종 점검하고, 개발팀이 즉시 실행할 수 있도록 완벽하게 확정하여 전달 준비를 완료하라. → 산출물 sessions/2026-11-28T01-34/designer.md
